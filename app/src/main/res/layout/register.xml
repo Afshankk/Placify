@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context="com.example.myplacements.RegisterActivity1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="62dp"
+                android:src="@drawable/icon_account_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER A NEW USER"
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="24dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/username_input" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="16dp"
+                    android:inputType="textPassword"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/eye_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_eye_closed"
+                    android:contentDescription="Toggle password visibility"
+                    android:layout_marginEnd="8dp" />
+            </RelativeLayout>
+
+            <!-- Image-Based CAPTCHA Section -->
+            <TextView
+                android:id="@+id/captcha_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select all images with cars"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal" />
+
+            <GridLayout
+                android:id="@+id/captcha_grid"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="16dp"
+                android:columnCount="3"
+                android:gravity="center"
+                android:padding="16dp"
+                android:rowCount="3">
+
+                <!-- 9 ImageViews for CAPTCHA -->
+                <ImageView
+                    android:id="@+id/captcha_image1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/car1"
+                    android:contentDescription="Captcha Image 1"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/plane1"
+                    android:contentDescription="Captcha Image 2"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/car2"
+                    android:contentDescription="Captcha Image 3"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/plane2"
+                    android:contentDescription="Captcha Image 4"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/boat2"
+                    android:contentDescription="Captcha Image 5"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/boat1"
+                    android:contentDescription="Captcha Image 6"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/plane3"
+                    android:contentDescription="Captcha Image 7"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/boat3"
+                    android:contentDescription="Captcha Image 8"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/captcha_image9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/car3"
+                    android:contentDescription="Captcha Image 9"
+                    android:scaleType="centerCrop" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:layout_marginTop="32dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp" />
+
+            <!-- Google Sign-In Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/google_sign_in_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Google"
+                    android:paddingEnd="8dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/google"
+                    android:contentDescription="@string/google_icon" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

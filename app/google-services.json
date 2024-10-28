@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525225907837",
+    "firebase_url": "https://myplacements-29ae4-default-rtdb.firebaseio.com",
+    "project_id": "myplacements-29ae4",
+    "storage_bucket": "myplacements-29ae4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525225907837:android:c19332d2e4052eafe10314",
+        "android_client_info": {
+          "package_name": "com.example.myplacements"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525225907837-qkih1usce6rlechcamm471plv1t66ps2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcMLPaoyuka4Vyq6qxvVzvIrvA0ygObkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525225907837-qkih1usce6rlechcamm471plv1t66ps2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

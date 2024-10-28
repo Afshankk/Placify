@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contribute Material"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/app_blue"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="24dp" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name (Mandatory)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Company Name -->
+        <EditText
+            android:id="@+id/company_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Name (Mandatory)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Company Role/Position -->
+        <EditText
+            android:id="@+id/position_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Role/Position (Mandatory)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Interview Process -->
+        <EditText
+            android:id="@+id/interview_process_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Interview Process (Mandatory)"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/link_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Share Link/Resources (if any)"
+            android:inputType="textUri"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- LinkedIn Profile -->
+        <EditText
+            android:id="@+id/linkedin_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LinkedIn Profile (e.g. https://www.linkedin.com/in/...)"
+            android:inputType="textUri"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_submit_contribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_blue"
+            android:text="Submit"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

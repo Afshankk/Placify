@@ -1,0 +1,102 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/e"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btn_sign_out"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/baseline_logout_24"
+        android:contentDescription="Sign Out" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
+
+            <!-- First Button (Contribute Material) -->
+            <Button
+                android:id="@+id/btn_contribute_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableTop="@drawable/baseline_edit_document_24"
+                android:gravity="center"
+                android:drawablePadding="8dp"
+                android:text="Contribute Material"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:background="@drawable/lavender_border"
+                android:padding="16dp" />
+
+            <!-- Second Button (Alumni Contact) -->
+            <Button
+                android:id="@+id/btn_alumni_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableTop="@drawable/baseline_shelves_24"
+                android:gravity="center"
+                android:drawablePadding="8dp"
+                android:text="Alumni Contact"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:background="@drawable/lavender_border"
+                android:padding="16dp" />
+
+            <!-- Third Button (Placement Material) -->
+            <Button
+                android:id="@+id/btn_placement_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableTop="@drawable/baseline_shelves_24"
+                android:gravity="center"
+                android:drawablePadding="8dp"
+                android:text="Placement Material"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:background="@drawable/lavender_border"
+                android:padding="16dp" />
+
+            <!-- Fourth Button (Resume and Cover Letter Templates) -->
+            <Button
+                android:id="@+id/btn_resume_templates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableTop="@drawable/baseline_edit_document_24"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:text="Resume and Cover Letter Templates"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:background="@drawable/lavender_border"
+            android:padding="16dp" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

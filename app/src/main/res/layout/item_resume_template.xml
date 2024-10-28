@@ -1,0 +1,32 @@
+<!-- res/layout/item_resume_template.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/image_template"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/resume_template_image" />
+
+    <TextView
+        android:id="@+id/text_template_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/button_view_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/app_blue"
+        android:textColor="@color/white"
+        android:text="  View Template  " />
+
+</LinearLayout>
